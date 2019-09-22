@@ -1,0 +1,30 @@
+---
+name: java-class-activity-01
+break: true
+indent: 4
+revision: feature/use-linters-plugins
+---
+
+# Reminders:
+# --> a check without an "--exact" the check is an "at least"
+# --> checks below a file in a directory are for that specific content
+# --> checks that appear stand-alone are for an entire repository
+
+# --> check the source code for various characteristics
+src/main:
+    java:
+        classone/PrintExample.java:
+            ConfirmFileExists
+            CountSingleLineComments --language Java --count 2
+            CountMultipleLineComments --language Java --count 2
+            MatchFileFragment --fragment "TODO" --count 0 --exact
+            MatchFileFragment --fragment "new Date()" --count 1 --exact
+            MatchFileRegex --regex "println\((.)*\)" --count 1 --exact
+
+# --> check that the number of commits is beyond a threshold
+CountCommits --count 1
+
+# --> check that the program executes correctly and produces exactly 4 lines of output
+ExecuteCommand --command "gradle build"
+ExecuteCommand --command "gradle -q --console plain run"
+#CountCommandOutput --command "gradle -q --console plain run" --count 4 --exact
