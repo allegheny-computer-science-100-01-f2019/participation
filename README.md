@@ -3,7 +3,7 @@
 ## Introduction
 
 Designed for use with [GitHub Classroom](https://classroom.github.com/), this
-repository contains the in-class materials that you will need in Computer Science 100-01.
+repository contains the class participation materials for Computer Science 100-01.
 All of the work that you do in class  will count towards your class participation grade.
 
 ## Commands
@@ -67,7 +67,7 @@ When the course instructor provides the new material for the in-class activity,
  you can type this command in the main directory for this repository:
 
 ```
-git remote add download git@github.com/allegheny-computer-science-100-01-f2019/participation.git
+git remote add download https://github.com/allegheny-computer-science-100-01-f2019/participation.git
 ```
 
 You should only need to type this command once; typing the command additional
