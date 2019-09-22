@@ -1,4 +1,4 @@
-# CMPSC 100-01 Class Activities
+# CMPSC 100-01 Participation
 
 ## Introduction
 
@@ -67,7 +67,7 @@ When the course instructor provides the new material for the in-class activity,
  you can type this command in the main directory for this repository:
 
 ```
-git remote add download git@github.com/allegheny-computer-science-100-01-f2019/class_activities.git
+git remote add download git@github.com/allegheny-computer-science-100-01-f2019/participation.git
 ```
 
 You should only need to type this command once; typing the command additional
@@ -89,7 +89,7 @@ manually resolve them with the help of the instructor or a teaching assistant.
 ## Problems
 
 If you have found a problem with this assignment's provided source code, then
-you can go to the [Computer Science 100-01 Class Activities](https://github.com/allegheny-computer-science-100-01-f2019/class_activities)
+you can go to the [Computer Science 100-01 Participation](https://github.com/allegheny-computer-science-100-01-f2019/participation)
 repository and create an issue by clicking the "Issues" tab and then clicking
 the green "New Issue" button. If you have found a problem with the [GatorGrader
 tool](https://github.com/GatorEducator/gatorgrader) and the way that it checks
