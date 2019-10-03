@@ -1,5 +1,6 @@
 package classthree;
 
+import java.util.Random;
 import java.util.Scanner;
 
 /** This program helps the user to create
@@ -22,22 +23,29 @@ public class NewIdentity {
     String lastName = scanner.nextLine();
 
     // TODO: explain
-    firstName = firstName.substring(0, 4);
+    Random rand = new Random();
+    int num1 = rand.nextInt(firstName.length()) + 2;
+    System.out.println("num1 is " + num1);
+    firstName = firstName.substring(0, num1);
 
     // TODO: explain
-    char letter = lastName.charAt(2);
+    int num2 = rand.nextInt(lastName.length());
+    System.out.println("num2 is " + num2);
+    char letter = lastName.charAt(num2);
 
     // TODO: explain
-    lastName = lastName.replace(letter, 't');
+    char letter1 = "abcdef".charAt(rand.nextInt(6));
+    System.out.println("letter 1 is " + letter1);
+    lastName = lastName.replace(letter, letter1);
 
     System.out.println("Enter a job");
     String job = scanner.nextLine();
     job = job.toUpperCase();
     System.out.println("job is " + job);
     System.out.println("length of the job String: " + job.length());
-    job = job.substring(0,2).concat("ing");
+    job = job.substring(0,2).concat("ER");
 
-    System.out.println("Your new name is " + firstName + " " + lastName);
+    System.out.println("*** Your new name is " + firstName + " " + lastName);
     System.out.println("Your new job title is " + job);
   }
 }
