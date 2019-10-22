@@ -11,8 +11,11 @@ public class GradeBookMain {
   public static void main(String [] args) {
     // call the constructor
     GradeBook myGradeBook = new GradeBook();
+    Scanner input = new Scanner (System.in);
+    System.out.println("Enter a course name");
+    String courseName = input.nextLine();
 
     // call the displayMessage method
-    myGradeBook.displayMessage();
+    myGradeBook.displayMessage(courseName);
   }
 }
