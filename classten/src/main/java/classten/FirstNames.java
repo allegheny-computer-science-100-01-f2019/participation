@@ -15,7 +15,7 @@ public class FirstNames {
 
 		String [] names = new String[41];
 
-		File file = new File("names.txt");
+		File file = new File("input/names.txt");
 		Scanner input = new Scanner(file);
 
 	}
