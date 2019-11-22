@@ -13,5 +13,6 @@ public class FirstNames {
 
     File file = new File("input/names.txt");
     Scanner input = new Scanner(file);
+
   }
 }
