@@ -13,6 +13,19 @@ public class SwitchDemoCalc {
   /** method to perform arithmetic calculations.
   */
   public double calculate(double left, double  right, char operator) {
-
+    switch (operator) {
+      case '+' : result = left + right;
+        break;
+      case '-' : result = left - right;
+        break;
+      case '*' : result = left * right;
+        break;
+      case '/' : result = left / right;
+        break;
+      case '%' : result = left % right;
+        break;
+      default  : System.out.println("Unknown Value");
+    }
+    return result;
   }
 }
